@@ -17,7 +17,7 @@ public class ProductoController {
     @Autowired
     private ProductoService productoService;
     
-    @GetMapping("/buscarTodos")
+    @GetMapping("/buscarTodo")
     public List<ProductoEntity> buscarTodos() {
         return this.productoService.buscarTodos();
     }
