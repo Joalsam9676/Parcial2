@@ -33,7 +33,7 @@ public class FacturaService {
         return this.cabeceraFacturaRepository.save(cabecera);
     }
      public CabeceraFacturaEntity buscarNit(String Nit) {
-        return this.cabeceraFacturaRepository.findclientBynit(Nit);
+        return this.cabeceraFacturaRepository.findByNit(Nit);
     }
      public DetalleFacturaEntity creardetalle(DetalleFacturaEntity detalle)
      {
