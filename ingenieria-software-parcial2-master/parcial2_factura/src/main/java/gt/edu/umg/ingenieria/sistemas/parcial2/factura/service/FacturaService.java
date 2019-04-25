@@ -32,4 +32,11 @@ public class FacturaService {
     {
         return this.cabeceraFacturaRepository.save(cabecera);
     }
+     public CabeceraFacturaEntity buscarNit(String Nit) {
+        return this.cabeceraFacturaRepository.findclientBynit(Nit);
+    }
+     public DetalleFacturaEntity creardetalle(DetalleFacturaEntity detalle)
+     {
+         return this.detalleFacturaRepository.save(detalle);
+     }
 }
